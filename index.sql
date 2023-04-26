@@ -130,7 +130,7 @@ SELECT * FROM VeXemPhim WHERE NgayKhoiTao = cast(getdate() as Date)
 
 SELECT * FROM HoaDonDV WHERE NgayKhoiTao = cast(getdate() as Date)
 
---Dua ra so luong va tong doanh thu cua thang hien tai cua ve va hoa ðon
+--Dua ra so luong va tong doanh thu cua thang hien tai cua ve va hoa Ã°on
 SELECT COUNT(ThanhTien) as SLHD, SUM(ThanhTien) as DoanhThuHD
 FROM HoaDonDV 
 WHERE MONTH(NgayKhoiTao)=MONTH(getdate()) and YEAR(NgayKhoiTao)=YEAR(getdate())
