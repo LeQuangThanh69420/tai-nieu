@@ -5,3 +5,4 @@
 
 # bao mat co ban
 * [HACK SPLAINING](https://www.hacksplaining.com)
+* [OWASP](https://owasp.org/www-project-top-ten)
