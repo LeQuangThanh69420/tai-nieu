@@ -4,5 +4,5 @@
 * VXL [Google Drive](https://drive.google.com/drive/folders/1iBdXtEQ1uCo59FbOCqtHrUvYWVRl_aJn?fbclid=IwAR2XWfH0qjjmIBKZuaDJAfGECh5KfYX9LaWDKn0xMI0EQI5AnRrs5wY6IOY)
 
 # bao mat co ban
-* [HACK SPLAINING](https://www.hacksplaining.com)
+* [HACK SPLAINING](https://www.hacksplaining.com/lessons)
 * [OWASP](https://owasp.org/www-project-top-ten)
