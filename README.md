@@ -3,5 +3,7 @@
 * KTTT [Google Drive](https://drive.google.com/drive/folders/1_RTKExg2SFJdMWCXnCYdvWNXIZ0qtr73)
 
 # bao mat co ban
+* [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+* [OAuth 2.0](https://oauth.net/2/)
 * [HACK SPLAINING](https://www.hacksplaining.com/lessons)
 * [OWASP](https://owasp.org/www-project-top-ten)
