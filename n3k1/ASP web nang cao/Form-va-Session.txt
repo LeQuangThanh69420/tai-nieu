@@ -1,0 +1,41 @@
+1. Lấy dữ liệu từ Form với method = POST
+    Cú pháp:
+        Request.Form    :Trả về tát cả các phàn tử của Form
+        Request.Form("ten phan tu"):    Lấy về giá trị của phần tử có tên trong ()
+VD:
+    <input type = text name = txtHoVaTen>
+    Lay gia tri phan tu nay bang: Request.Form(txtHoVaTen)
+
+2. Lay tung gia tri 1 cua checkbox
+    Request.Form("ten checkbox")(i)
+
+3. Input type = "hidden"    //gui di 1 thong tin den action ma khong hien thi ra
+//Ung dung trong viec lay Id tu database va gui di de xu ly tai action
+
+4. Lay du lieu tu Form voi method = GET
+    Cu phap:
+        Request.QueryString:    tra ve du lieu duoc truyen tren URL
+        Request.QueryString("ten phan tu")
+VD:
+        co URL: http://localhost:8080/session02_02.asp?txtHoVaTen='Hoang'
+        Request.QueryString("txtHoVaTen") -> return gia tri "Hoang"
+
+Neu khong biet method thi co the goi ngan gon bang cach:
+        Request("ten phan tu") :    Lay ve gia tri cua phan tu co ten la "ten phan tu"
+
+VD:
+        Request("txtHoVaTen")
+    
+5. Chuyen huong giua cac trang
+    Response.Redirect("trang can den")
+VD:
+    Response.Redirect("login.app")
+
+6. Session:
+    Cu phap: Session("ten session"):    Luu tru gia tri trong mot phien lam viec
+
+VD: Session("loi_dangnhap") = "Ban chua dang nhap"
+VD:
+    Tao 1 trang dang nhap. Neu ten dang nhap = admin va pass = 123321 thi cho phep vao trang admin.asp
+    Neu sai thi quay lai trang dang nhap va bao loi
+    O trang admin.asp neu chua dang nhap thi bat quay lai dang nhap

@@ -1,0 +1,20 @@
+Access 2016:
+
+set conn = Server.CreateObject("ADODB.Connection")
+strconn = "Provider=Microsoft.jet.OLEDB.4.0; Data Source=" & Server.Mappath("database.mdb")
+conn.open strconn
+conn.execute sql: thuc thi lenh
+conn.close	: dong ket noi
+
+set rs = Server.CreateObject("ADODB.Recordset")
+rs.open "select * from table", conn
+rs.eof = true 	: nếu ko có bản ghi nào hoặc đến bản ghi cuối cùng
+rs("tên trường"): trả về dữ liệu của trường đó
+rs(stt) 	: trả về dữ liệu của trường có STT=stt+1
+rs.movenext 	: di chuyển đến bản ghi tiếp theo
+rs.movefirst 	: về bản ghi đầu tiên
+rs.movelast 	: về bản ghi cuối cùng
+rs.close	: đóng tập kết quả
+
+gọi file asp trong file html : <!--#include file="tenfile.asp"-->
+

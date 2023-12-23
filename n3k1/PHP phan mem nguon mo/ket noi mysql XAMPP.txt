@@ -1,0 +1,33 @@
+1. Ket noi den CSDL
+mysqli($servername, $username, $password, $dbname);
+
+vi du:
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "test";
+$conn = new mysqli($servername, $username, $password, $dbname);
+$conn->close(); //dong ket noi
+
+if($conn->connect_error) {
+	die("Loi ket noi!");
+} else {
+	echo "Ket noi thanh cong!";
+}
+
+2. Lay du lieu
+$result = $conn->query("selct * from table");
+$result->num_rows : so ban ghi //kiem tra tap ket qua co bao nhieu ban ghi
+$result->fetch_assoc() //chuyen den ban ghi tiep theo
+
+Vi du:
+$sql = "select * from category order by corder asc";
+$result = $conn->query($sql) or die("ko lay dc ket qua!");
+if($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+		echo $row["cid"] . $row["cname"];
+	} else {
+		echo "tap ket qua rong!";
+	}
+}
+$conn->close();
